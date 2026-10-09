@@ -13,7 +13,6 @@ const ACKFUP_AUTOR_FALL = 2;
 
 // Texto do acompanhamento, em HTML. {SAUDACAO} vira "Prezada Maria,",
 // "Prezado João," ou "Prezado(a) Alex,", conforme as listas abaixo.
-// Evite apóstrofos no GLPI 10 (veja o README).
 const ACKFUP_TEXTO = '<p>{SAUDACAO}</p>'
     . '<p>Sua documentação foi <strong>recebida</strong> e está em análise.<br>'
     . 'O resultado será divulgado a partir de <strong>DD/MM/AAAA</strong>.</p>'

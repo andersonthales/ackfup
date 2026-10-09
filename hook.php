@@ -100,10 +100,18 @@ function plugin_ackfup_item_add(CommonDBTM $item)
         return $item;
     }
 
+    $content = plugin_ackfup_texto($tid);
+    if (version_compare(GLPI_VERSION, '11.0.0', '<')) {
+        // O GLPI 10 grava a entrada do add() sem escapar (espera dados já
+        // tratados, como vêm do $_POST). Sem isto, um apóstrofo no texto ou
+        // no nome do requerente quebra o INSERT.
+        $content = Toolbox::addslashes_deep($content);
+    }
+
     (new ITILFollowup())->add([
         'itemtype'               => 'Ticket',
         'items_id'               => $tid,
-        'content'                => plugin_ackfup_texto($tid),
+        'content'                => $content,
         'is_private'             => 0,
         'users_id'               => plugin_ackfup_autor(),
         '_do_not_compute_status' => true,

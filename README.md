@@ -4,7 +4,7 @@ Responde automaticamente a cada **novo chamado** com um acompanhamento de "receb
 
 | | |
 |---|---|
-| **Versão** | 1.3.0 |
+| **Versão** | 1.3.1 |
 | **GLPI** | 10.0.x e 11.0.x |
 | **Opcional** | Formcreator (colunas extras na lista de solicitações) |
 | **Licença** | GPLv2+ |
@@ -87,7 +87,6 @@ Depois, separe os nomes manualmente em masculinos e femininos. Os que deixarem d
 
 ## Limitações conhecidas
 
-- **GLPI 10: evite apóstrofos** em `ACKFUP_TEXTO`. O texto é gravado sem escape, e um `'` faz a criação do acompanhamento falhar (o chamado é criado normalmente).
 - O acompanhamento só é criado se o chamado **não tiver nenhum** acompanhamento no momento da criação.
 - As colunas de busca seguem a convenção CPF = login, curso = *Título* e campus = categoria. Em outros cenários, elas mostram dados sem sentido.
 

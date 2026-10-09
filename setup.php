@@ -1,5 +1,5 @@
 <?php
-define('PLUGIN_ACKFUP_VERSION', '1.3.0');
+define('PLUGIN_ACKFUP_VERSION', '1.3.1');
 
 function plugin_init_ackfup()
 {

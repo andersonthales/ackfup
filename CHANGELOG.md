@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.3.1] - 2026-10-08
+### Corrigido
+- GLPI 10: apóstrofo no texto ou no nome do requerente fazia a criação do acompanhamento falhar
+
 ## [1.3.0] - 2026-10-08
 Unifica as duas versões que estavam em produção e prepara o código para ser público.
 ### Alterado
