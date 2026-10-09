@@ -186,6 +186,7 @@ function plugin_ackfup_saudacao($tid)
 function plugin_ackfup_texto($tid)
 {
     return str_replace('{SAUDACAO}', plugin_ackfup_saudacao($tid), ACKFUP_TEXTO);
+}
 
 /** Colunas extras nas listas de busca (Chamados e Formcreator). */
 function plugin_ackfup_getAddSearchOptionsNew($itemtype)
